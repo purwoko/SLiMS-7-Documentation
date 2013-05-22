@@ -1,21 +1,29 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass scrbook
 \use_default_options true
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \float_placement H
 \paperfontsize default
 \spacing single
@@ -24,21 +32,31 @@
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -363,10 +381,121 @@ Realy Simple Syndication
 Fitur pencarian menggunakan suara
 \end_layout
 
+\begin_layout Standard
+
+\lang bahasa
+Pencarian menggunakan suara pada SLiMS hanya dapat dilakukan jika browser
+ yang digunakan adalah Google Chrome.
+ Selain itu, server wajib terkoneksi ke internet serta terdapat microphone
+ pada komputer yang digunakan.
+ Jika syarat ini terpenuhi, maka pada kotak pencarian yang dibuka menggunakan
+ Chrome akan muncul gambar microphone.
+ Silakan klik gambar microphone tersebut dan ucapkan kata yang ingin anda
+ cari.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac-voice.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Pencarian menggunakan suara
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 
 \lang bahasa
 Fitur keyword suggestion menggunakan library Enchant 
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Fitur ini berguna, ketika kita salah menuliskan ejaan kata kunci pada kotak
+ pencarian di OPAC.
+ Jika ini terjadi, maka SLiMS akan menyuguhkan saran kata yang mungkin kita
+ maksudkan.
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Agar fitur ini aktif, maka server harus terinstall php-enchant dan terkoneksi
+ ke internet.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac-enchant.jpg
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+Auto-correct pada SLiMS
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
