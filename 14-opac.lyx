@@ -119,8 +119,8 @@ usi terkait dengan mengedit file libnfo.inc.php yang terletak pada folder
 
 \lang bahasa
 Dalam OPAC ini pula, di berikan fasilitas untuk mengubah bahasa pengantar.
- OPAC Senayan telah mempunyai 5 bahasa pengantar; yaitu Arab, Indonesia,
- Inggris, Jerman dan Spanyol.
+ OPAC SLiMS telah mempunyai berbagai bahasa pengantar; yaitu Arab, Indonesia,
+ Inggris, Jerman dan Spanyol, Persia dan lainnya.
 \end_layout
 
 \begin_layout Standard
@@ -130,7 +130,50 @@ Dalam OPAC ini pula, di berikan fasilitas untuk mengubah bahasa pengantar.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac-lang.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+pilihan bahasa di OPAC
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -138,7 +181,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/template_default.png
-	scale 32
+	scale 35
 
 \end_inset
 
@@ -173,7 +216,50 @@ Opac
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac-list.png
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Daftar katalog
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -210,13 +296,18 @@ Detail Opac
 \end_layout
 
 \begin_layout Standard
+OPAC SLiMS saat ini telah mampu menampilkan fitur berbagai ke media sosial.
+ 
+\end_layout
+
+\begin_layout Standard
 \align center
 
 \lang bahasa
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -283,7 +374,7 @@ Show Promote
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -291,7 +382,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/opac-promote.png
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -341,7 +432,7 @@ RSS merupakan suatu fitur yang dapat menunjukkan informasi koleksi yang
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -349,7 +440,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/opac-rss.png
-	scale 40
+	scale 70
 
 \end_inset
 
@@ -401,7 +492,7 @@ Pencarian menggunakan suara pada SLiMS hanya dapat dilakukan jika browser
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -409,7 +500,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/opac-voice.png
-	scale 40
+	scale 45
 
 \end_inset
 
@@ -464,7 +555,7 @@ Agar fitur ini aktif, maka server harus terinstall php-enchant dan terkoneksi
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -621,7 +712,7 @@ File multimedia yang diupload pada modul Bibliografi akan ditampilkan pada
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -629,6 +720,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/multimed1.png
+	scale 70
 	rotateOrigin center
 
 \end_inset
@@ -679,7 +771,7 @@ Mulai Stable13, Senayan telah mendukung tampilan dokumen lampiran dalam
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -736,14 +828,10 @@ Mulai Senayan3-stable10, sistem pencarian di OPAC sudah mendukung logika
 \lang bahasa
 Misalnya: 
 \family typewriter
-subject=politik NOT politic
+title=web AND author=leon
 \family default
-, hasilnya adalah politik tanpa memunculkan politic.
+, hasilnya adalah judul web dan pengarangnya leon.
  
-\family typewriter
-title=mapping AND author=dwikorita
-\family default
-, hasilnya adalah koleksi yang berjudul mapping dan pengarangnya dwikorita.
 \end_layout
 
 \begin_layout Standard
@@ -753,7 +841,7 @@ title=mapping AND author=dwikorita
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -761,6 +849,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/boolean.png
+	scale 60
 	rotateOrigin center
 
 \end_inset
@@ -817,7 +906,7 @@ Mulai Senayan3-Stable12, senayan mempunyai fitur Member Area.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -825,7 +914,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/opac-memberlogin.png
-	scale 120
+	scale 70
 	rotateOrigin center
 
 \end_inset
@@ -861,7 +950,7 @@ Tampilan Menu Login Anggota
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -869,7 +958,6 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/opac-login-logout.png
-	scale 130
 	rotateOrigin center
 
 \end_inset
@@ -949,7 +1037,7 @@ Informasi Anggota, Peminjaman dan Sejarah peminjaman + download daftarnya
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -957,7 +1045,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/opac-memberarea1.png
-	scale 80
+	scale 60
 	rotateOrigin center
 
 \end_inset
@@ -1140,7 +1228,7 @@ Mensetting Email server.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1190,7 +1278,7 @@ Pada email pustakawan akan muncul kiriman email sebagai berikut:
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -1303,7 +1391,7 @@ Fitur ini digunakan untuk memberikan komentar pada bibliografi.
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -1328,6 +1416,114 @@ status open
 
 \lang bahasa
 Komentar pada bibliografi
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+
+\lang bahasa
+Menampilkan Halaman Pustakawan
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Untuk menampilkan halaman pustakawan, cukup klik 
+\begin_inset Quotes eld
+\end_inset
+
+librarian
+\begin_inset Quotes erd
+\end_inset
+
+ pada template OPAC default Cendana.
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac-kliklibrarian.png
+	scale 70
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+memanggil profil pustakawan
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/opac-libprof.png
+	scale 60
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Tampilan profil pustakawan
 \end_layout
 
 \end_inset

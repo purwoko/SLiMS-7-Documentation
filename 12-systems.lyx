@@ -105,8 +105,9 @@ Form di sini dapat anda gunakan untuk melakukan pengubahan preferensi global
  pengembalian koleksi dengan metode cepat), Loan Limit Overrride (Pengabaian
  Batas Pinjam), Disable/Enable detail XML di OPAC, Disable/Enable hasil
  XML di OPAC, seting Allow (mengijinkan) atau Forbid (melarang) pengunjung/pengg
-una untuk mengunduh file attachment di OPAC, Session Login Timeout, serta
- Barcode Encoding.
+una untuk mengunduh file attachment di OPAC, Enable Search Spellchecker
+ untuk seting pengecekan katakunci (fitur ini menggunakan Enchant library.
+ silakan baca tips dan trik), Session Login Timeout, serta Barcode Encoding.
  Dalam menu ini pula, kita dapat melihat versi senayan yang kita gunakan.
 \end_layout
 
@@ -248,7 +249,7 @@ Konfigurasi Menu Content secara default
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -299,6 +300,7 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/sys-cont-tampil.png
+	scale 60
 
 \end_inset
 
@@ -422,7 +424,7 @@ Menu ini digunakan untuk melakukan index pada database bibliografi yang
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -518,7 +520,7 @@ i singkat modul), kemudian klik Save.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -526,6 +528,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/sys-modulist.png
+	scale 60
 
 \end_inset
 
@@ -598,7 +601,7 @@ Add New Module
 \begin_layout Section
 
 \lang bahasa
-Menu System User
+Menu Librarian & System User
 \end_layout
 
 \begin_layout Standard
@@ -613,7 +616,8 @@ Merupakan fasilitas untuk menentukan user yang dapat mengakses sistem sesuai
  user.
  Untuk menambah user baru, klik Add New User, kemudian isikan Login Username,
  Real Name, Groups, Password.
- 
+ Selain itu, adapula fasilitas untuk mengunggah foto pustakawan dan alamat
+ media sosial pustakawan.
 \end_layout
 
 \begin_layout Standard
@@ -659,6 +663,13 @@ Tambah User
 
 \end_layout
 
+\begin_layout Standard
+
+\lang bahasa
+Profil dari masing-masing pustakawan akan ditampilkan pada halaman OPAC.
+ 
+\end_layout
+
 \begin_layout Section
 
 \lang bahasa
@@ -691,6 +702,7 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/sys-usergroup.png
+	scale 50
 
 \end_inset
 
@@ -705,7 +717,7 @@ status open
 \begin_layout Plain Layout
 
 \lang bahasa
-Contoh Group di Senayan 
+Contoh Group di SLiMS 
 \end_layout
 
 \end_inset

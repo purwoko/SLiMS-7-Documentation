@@ -1,21 +1,29 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass scrbook
 \use_default_options true
-\language english
+\maintain_unincluded_children false
+\language bahasa
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -23,20 +31,31 @@
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -57,51 +76,42 @@ Kirimkan Donasi anda ke:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Shadowbox
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-width "0pt"
-special "0"
-height "0pt"
-height_special "100col%"
-status collapsed
 
-\begin_layout Plain Layout
+\series bold
 Bank Syariah Mandiri KCP Cipinang Jaya No.
  Rek.
- : 7037390113 Atas Nama : Arif QQ Senayan Dev Comm
-\end_layout
-
-\end_inset
-
-
+ : 7037390113 
 \end_layout
 
 \begin_layout Standard
-Jika anda ingin donasi dalam bentuk lain, silakan kontak ke SDC melalui
- email senayan.slims@slims.web.id dan cc ke Lead Developer SLiMS: hendrowicaksono@y
-ahoo.com
+
+\series bold
+Atas Nama : Arif QQ Senayan Dev Comm
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Jika anda ingin donasi dalam bentuk lain, silakan kontak ke SDC 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+melalui email senayan.slims@slims.web.id dan cc ke Developer SLiMS: hendrowicaksono
+@yahoo.com
 \end_layout
 
 \begin_layout Section
-
-\lang bahasa
 Tentang SLiMS:
 \end_layout
 
 \begin_layout Standard
-
-\lang bahasa
 Sebagai bentuk penghargaan dan kebanggaan terhadap Indonesia, mulai Senayan3-sta
 ble14, rilis SLiMS menggunakan nama flora yang tumbuh di Nusantara.
  Senayan3-Stable14 menggunakan codename Seulanga, Senayan3-Stable15 menggunakan
  codename Matoa, SLiMS-5 menggunakan codename Meranti.
- 
-\lang english
-Informasi lengkap rilis tiap versi ada di 
+ Informasi lengkap rilis tiap versi ada di 
 \begin_inset Flex URL
 status collapsed
 
@@ -113,152 +123,19 @@ http://slims.web.id/web/?q=node/1
 \end_inset
 
 .
- Jika anda ingin mengetahui sejarah pengembangan SLiMS, silakan buka:
+ Jika anda ingin mengetahui sejarah pengembangan SLiMS, silakan buka website
+ SLiMS http://slims.web.id
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-width "0pt"
-special "0"
-height "0pt"
-height_special "100col%"
-status collapsed
-
-\begin_layout Plain Layout
-http://id.wikipedia.org/wiki/Senayan_%28perangkat_lunak%29
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang bahasa
-Setelah Senayan3-Stable15, SLiMS langsung melompat ke SLiMS-5 yang menggunakan
- codename MERANTI.
-\end_layout
-
-\begin_layout Standard
-
-\lang bahasa
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-width "0pt"
-special "0"
-height "0pt"
-height_special "100col%"
-status collapsed
-
-\begin_layout Plain Layout
-
-\lang bahasa
-Meranti merupakan tumbuhan kayu yang populasinya kian mendekati kepunahan.
- Meranti yang merupakan spesies dari famili Dipterocarpaceae masuk dalam
- penetapan spesies prioritas konservasi Lembaga Ilmu Pengetahuan Indonesia
- atau LIPI.
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang bahasa
-Peneliti dari Pusat Penelitian Biologi LIPI, Dr Tukirin Partomiharjo, mengatakan
-, meranti bersama tumbuhan lain dalam famili Dipterocarpaceae seperti kayu
- kapur, kruing, dan bengkirai menjadi spesies yang paling banyak dimanfaatkan
- manusia.
- Namun, pengeksplorasian besar-besaran terhadap tumbuhan ini membuat populasinya
- terus berkurang.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-http://himpalaunas.com/artikel/lingkungan/2010/09/28/wah-pohon-meranti-terancam-p
-unah
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang bahasa
-Secara fisik, kayu Meranti tegak menjulang tinggi dengan banyak dahan.
- Kayu ini tergolong bernilai tinggi dan langka, bahkan nyaris punah.
- SDC berharap SLiMS-5 akan dapat menjulang tinggi dan memberi manfaat bagi
- perkembangan banyak perpustakaan, khususnya di Indonesia.
+SLiMS-7 menggunakan codename Cendana.
+ Kami berharap SLiMS Cendana dapat menyebar wanginya ke berbagai penjuru
+ dunia, menjadi jawaban atas kebutuhan automasi perpustakaan di Indonesia
+ khususnya dan seluruh dunia.
  
 \end_layout
 
 \begin_layout Standard
-\align center
-
-\lang bahasa
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status collapsed
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename image/Meranti-Tree03.png
-	scale 30
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang bahasa
-Sumber gambar: 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-http://www.towermaster-online.com/images/enviropole/Meranti-Tree03.jpg
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\lang bahasa
-SLiMS-7 menggunakan codename Cendana.
- .......
-\end_layout
-
-\begin_layout Standard
-
-\lang bahasa
 \begin_inset Newpage newpage
 \end_inset
 
@@ -266,8 +143,6 @@ SLiMS-7 menggunakan codename Cendana.
 \end_layout
 
 \begin_layout Section
-
-\lang bahasa
 Credit Title
 \end_layout
 
@@ -275,7 +150,6 @@ Credit Title
 \align center
 
 \emph on
-\lang bahasa
 Credit Title: 
 \begin_inset Newline newline
 \end_inset
@@ -290,8 +164,6 @@ Hendro Wicaksono (hendrowicaksono@yahoo.com) -- Arie Nugraha (dicarve@yahoo.com)
 \begin_layout Standard
 \noindent
 \align center
-
-\lang bahasa
 Dokumen ini dibuat menggunakan Creative Common License (CCL)
 \begin_inset Newline newline
 \end_inset
@@ -312,8 +184,6 @@ http://creativecommons.org/about/licenses/
 
 \begin_layout Standard
 \align center
-
-\lang bahasa
 \begin_inset Float figure
 placement H
 wide false
@@ -337,8 +207,6 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-
-\lang bahasa
 \begin_inset Newpage newpage
 \end_inset
 
@@ -347,35 +215,6 @@ status collapsed
 
 \begin_layout Section
 Mereka Bicara
-\end_layout
-
-\begin_layout Itemize
-
-\noun on
-Ismail Fahmi:
-\noun default
- Turut bangga dengan Hendro (Wicaksono) dan kawan-kawan di SLiMS.
- Sebuah pencapaian yg luar biasa.
- Anda pantas mendapatkannya, karena dedikasi dan kerjakeras selama ini.
- Semoga makin memompa semangat teman-teman untuk terus berkarya.
-\end_layout
-
-\begin_layout Itemize
-
-\noun on
-Diao Ai Lien
-\noun default
- (Pustakawan berprestasi I DIKTI 2011): Bravo!! Maju terus SLIMS.
-\end_layout
-
-\begin_layout Itemize
-
-\noun on
-Putu Laxman Pendit:
-\noun default
- TOP MARKOTOP! Semoga SLiMS dan Komunitasnya bisa terus jadi bukti bahwa
- berbuat baik itu baik, tetapi lebih baik lagi kalau berbuat baik untuk
- orang banyak! :-))
 \end_layout
 
 \begin_layout Itemize
@@ -402,16 +241,136 @@ http://www2.law.uu.nl/english/sim/library/ecchrd/32/OpenSource.pdf
 \end_layout
 
 \begin_layout Itemize
-Ezza Fajar Ramadhan: Padahal baru 2 bulan berjalan, tapi [perpustakaan ini]
- sudah langsung ditunjuk UPT untuk mewakili Kecamatan Wiradesa ikut Lomba
- Perpustakaan Tingkat Kabupaten Pekalongan.
- Alhamdulilah dapat predikat A untuk Sistem Pelayanan karena saya memakai
- SLiMS :) Trengkyuuuuu SENAYAN !!! MATURNUWUN :D
+Gurujim - Australia: SLiMS is too good to be a secret - I want to help share
+ it with the world 
 \end_layout
 
 \begin_layout Itemize
-Gurujim - Australia: SLiMS is too good to be a secret - I want to help share
- it with the world 
+Suyoto Sudiro: Saya seorang yang hanya memiliki sedikit pengetahuan ilmu
+ perpustakaan, sedangkan TI khususnya programming hanya ikut-ikutan.
+ Tetapi sejak dipublikasikannya senayan SLiMS dari awal hingga sekarang
+ (Cendana), sungguh merupakan motivasi dan semangat saya untuk berkerja
+ di perpustakaan.
+\end_layout
+
+\begin_layout Section
+Developer
+\end_layout
+
+\begin_layout Subsection
+Core Developer
+\end_layout
+
+\begin_layout Enumerate
+Hendro Wicaksono ( hendrowicaksono@gmail.com) 
+\end_layout
+
+\begin_layout Enumerate
+Arie Nugraha ( dicarve@gmail.com) 
+\end_layout
+
+\begin_layout Enumerate
+Wardiyono (wynerst@gmail.com) 
+\end_layout
+
+\begin_layout Enumerate
+Purwoko (tamanjiwa@gmail.com) 
+\end_layout
+
+\begin_layout Enumerate
+Arif Syamsudin ( buitenzorg812@gmail.com) 
+\end_layout
+
+\begin_layout Enumerate
+Rasyid Ridho (rasyidridho@gmail.com) 
+\end_layout
+
+\begin_layout Enumerate
+Eddy Subratha (eddy.subratha@gmail.com) 
+\end_layout
+
+\begin_layout Enumerate
+Indra Sutriadi (indra.sutriadi@gmail.com)
+\end_layout
+
+\begin_layout Subsection
+Localisation contributors
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Germany
+\series default
+: Tobias Zeumer (tzeumer@verweisungsform.de) 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Thai
+\series default
+: Prasitichai <eak.pras@facebook.com> 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Bengali
+\series default
+: A.
+ K.
+ M.
+ Nurul Alam <nalamapu@gmail.com> 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Persian
+\series default
+: Mohammad Javad Mansourzadeh <info@mansourzadeh.ir> 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Arabic
+\series default
+: Rasyid Ridho <rasyidridho@gmail.com> 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Malay
+\series default
+: Jerry Mohd.
+ Arif 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Brazilian
+\series default
+ 
+\series bold
+Portuguese
+\series default
+: Eduardo Koiti Kataoka <edukataoka@yahoo.com.br> 
+\end_layout
+
+\begin_layout Enumerate
+
+\series bold
+Spain
+\series default
+: Jhon Urrego Felipe Mejia <ingenierofelipeurrego@gmail.com>
+\end_layout
+
+\begin_layout Standard
+THANKS TO OUR USERS AND COMMUNITIES, YOU ARE DEVELOPERS TOO!
 \end_layout
 
 \begin_layout Section
@@ -420,7 +379,7 @@ Rekomendasi URL terkait SLiMS
 
 \begin_layout Itemize
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -503,6 +462,34 @@ https://github.com/slims/
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://goslims.net
+\end_layout
+
+\end_inset
+
+ (Berbagai produk Komunitas)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+http://slimscommeet.web.id
+\end_layout
+
+\end_inset
+
+ (Informasi Community Meetup)
+\end_layout
+
+\begin_layout Itemize
 Komunitas SLiMS: 
 \begin_inset Flex URL
 status collapsed
@@ -558,7 +545,7 @@ http://makassarlib.net
 
 \end_inset
 
-, 
+,
 \begin_inset Newpage newpage
 \end_inset
 
@@ -570,74 +557,18 @@ SLiMS Theme Song: SLiMS For Us
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-width "0pt"
-special "0"
-height "0pt"
-height_special "100col%"
+Lyric and Music by Sonny Rockalovast (
+\begin_inset Flex URL
 status collapsed
 
 \begin_layout Plain Layout
-Open Source has presented multi platform software 
-\end_layout
 
-\begin_layout Plain Layout
-Senayan Library Management System
-\end_layout
-
-\begin_layout Plain Layout
-It always develops needed features 
-\end_layout
-
-\begin_layout Plain Layout
-For library users who need searching engine
-\end_layout
-
-\begin_layout Plain Layout
-SliMS born in the world For Library User
-\end_layout
-
-\begin_layout Plain Layout
-Senayan is a perfect software which fulfills the need 
-\end_layout
-
-\begin_layout Plain Layout
-Library automacy with various languages in it 
-\end_layout
-
-\begin_layout Plain Layout
-Senayan is developed by Linux lover community
-\end_layout
-
-\begin_layout Plain Layout
-Right to be used by everyone and free modified
-\end_layout
-
-\begin_layout Plain Layout
-SliMS for human being, always arises 
-\end_layout
-
-\begin_layout Plain Layout
-Library system digitally collections
-\end_layout
-
-\begin_layout Plain Layout
-Slims has been stable now can be used for library users 
+https://www.facebook.com/saxons.sonnyrocks.suko.putro
 \end_layout
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-Lyric and Music by Sonny Rockalovast (https://www.facebook.com/saxons.sonnyrocks.suk
-o.putro), download 
+), download 
 \begin_inset Flex URL
 status open
 
@@ -649,6 +580,60 @@ http://slims.web.id/download/theme_song/
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+SLiMS For US
+\end_layout
+
+\begin_layout Standard
+Open Source has presented multi platform software
+\end_layout
+
+\begin_layout Standard
+Senayan Library Management System
+\end_layout
+
+\begin_layout Standard
+It always develops needed features
+\end_layout
+
+\begin_layout Standard
+For library users who need searching engine
+\end_layout
+
+\begin_layout Standard
+SliMS born in the world For Library User
+\end_layout
+
+\begin_layout Standard
+Senayan is a perfect software which fulfills the need
+\end_layout
+
+\begin_layout Standard
+Library automacy with various languages in it
+\end_layout
+
+\begin_layout Standard
+Senayan is developed by Linux lover community
+\end_layout
+
+\begin_layout Standard
+Right to be used by everyone and free modified
+\end_layout
+
+\begin_layout Standard
+SliMS for human being, always arises
+\end_layout
+
+\begin_layout Standard
+Library system digitally collections
+\end_layout
+
+\begin_layout Standard
+Slims has been stable now can be used for library users
 \end_layout
 
 \end_body

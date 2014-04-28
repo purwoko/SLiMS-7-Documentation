@@ -1,21 +1,29 @@
-#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
-\lyxformat 345
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
 \begin_document
 \begin_header
 \textclass scrbook
 \use_default_options true
+\maintain_unincluded_children false
 \language english
+\language_package default
 \inputencoding auto
+\fontencoding global
 \font_roman default
 \font_sans default
 \font_typewriter default
 \font_default_family default
+\use_non_tex_fonts false
 \font_sc false
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
 
 \graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
 \float_placement H
 \paperfontsize default
 \spacing single
@@ -24,21 +32,31 @@
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
+\use_mhchem 1
+\use_mathdots 1
 \cite_engine basic
 \use_bibtopic false
+\use_indices false
 \paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
 \secnumdepth 3
 \tocdepth 3
 \paragraph_separation indent
-\defskip medskip
+\paragraph_indentation default
 \quotes_language english
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
-\author "" 
-\author "" 
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
 \end_header
 
 \begin_body
@@ -57,6 +75,110 @@ Tips dan Trik
 Knowledge is free at the library.
  Just bring your own container.
  - Unknown
+\end_layout
+
+\begin_layout Section
+Mengaktifkan Spell checker
+\end_layout
+
+\begin_layout Standard
+Spell Checker merupakan fitur yang ada pada OPAC SLiMS, yang dapat memudahkan
+ kita mendapatkan kata yang pas untuk kata kunci, jika penulisan kata kunci
+ kita salah.
+ Untuk mengaktifkan fitur ini, pastikan pengaturan di modul sistem sudah
+ enalble (dimungkinkan)
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\lang bahasa
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+
+\lang bahasa
+\begin_inset Graphics
+	filename image/sys-spelcheck.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang bahasa
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang bahasa
+Pengaturan Spellchecker di modul System
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang bahasa
+Selain itu, pastikan sistem operasi anda (server) telah terinstall Enchant
+ library.
+ Cara instalasi library enchant dapat dilihat di: 
+\end_layout
+
+\begin_layout Section
+Mengaktifkan webcam di SLiMS
+\end_layout
+
+\begin_layout Standard
+Webcam digunakan untuk mengambil foto langsung dan disimpan di data SLiMS.
+ Beberapa modul yang memiliki fitur ini adalah: tambah anggota, tambah pengguna
+ sistem/pustawakan.
+\end_layout
+
+\begin_layout Standard
+Untuk mengaktifkan modul ini, pastikan baris berikut yang ada di file sysconfig.i
+nc.php bernilai true.
+\end_layout
+
+\begin_layout Standard
+/* WEBCAM feature */ 
+\end_layout
+
+\begin_layout Standard
+$sysconf['webcam'] = true;
+\end_layout
+
+\begin_layout Section
+Mengaktifkan pemindai (scanner) sampul buku
+\end_layout
+
+\begin_layout Standard
+Fitur ini digunakan untuk memindai sampul buku pada menu tambah/edit bibliografi.
+ Untuk mengaktifkan fitur ini, pastikan baris berikut yang ada di file sysconfig.
+inc.php bernilai true.
+\end_layout
+
+\begin_layout Standard
+/* SCANNER feature */ 
+\end_layout
+
+\begin_layout Standard
+$sysconf['scanner'] = true;
 \end_layout
 
 \begin_layout Section
@@ -115,7 +237,7 @@ sysconfig.inc.php
 \begin_inset Float figure
 wide false
 sideways false
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \align center
@@ -155,7 +277,7 @@ Seting OAI pada file sysconfig.inc.php
 Sampaikan url service OAI-PMH kepada yang berkepentingan.
  Url tersebut adalah: 
 \begin_inset Flex URL
-status open
+status collapsed
 
 \begin_layout Plain Layout
 
@@ -331,8 +453,10 @@ Pengaturan Ukuran barcode, label, kartu anggota dan nota peminjaman
 \begin_layout Standard
 
 \lang bahasa
-Setting ukuran barcode dan label dapat dilakukan dengan melakukan editing
- file printed_settings.inc.php yang terletak di 
+Setting ukuran barcode dan label dan isian pada kartu anggota dapat dilakukan
+ langsung melalui tampilan di masing-masing modul yang bersangkutan.
+ Selain itu, perubahan dapat dilakukan juga melalui file printed_settings.inc.php
+ yang terletak di 
 \begin_inset Flex URL
 status collapsed
 
@@ -343,7 +467,7 @@ status collapsed
 
 \end_inset
 
- (sesuaikan dengan versi SliMS yang anda pakai)
+ (sesuaikan dengan versi SliMS yang anda pakai).
 \end_layout
 
 \begin_layout Standard
@@ -370,237 +494,71 @@ Dalam file ini akan didapatkan baris-baris kode sebagai berikut:
 
 \family typewriter
 \lang bahasa
-$page_width = 50;
+$sysconf['print']['label']['page_margin'] = 0.2;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$page_height = 30;
+$sysconf['print']['label']['items_per_row'] = 3;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$page_margin = 0.2;
+$sysconf['print']['label']['items_margin'] = 0.05;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$items_per_row = 3;
+$sysconf['print']['label']['box_width'] = 8;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$items_margin = 0.05;
+$sysconf['print']['label']['box_height'] = 3.3;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$box_width = 8;
+$sysconf['print']['label']['include_header_text'] = 1; 
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$box_height = 3.3;
+$sysconf['print']['label']['header_text'] = ''; 
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$include_header_text = 1; // change to 0 if dont want to use header in each
- label
+$sysconf['print']['label']['fonts'] = "Arial, Verdana, Helvetica, 'Trebuchet
+ MS'";
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$header_text = ''; // keep empty if you want to use Library Name as a header
- text
+$sysconf['print']['label']['font_size'] = 11;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-// item barcode print settings
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-/* measurement in cm */
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_page_width = 50;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_page_height = 30;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_page_margin = 0.2;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_items_per_row = 3;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_items_margin = 0.1;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_box_width = 7;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_box_height = 5;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_include_header_text = 1; // change to 0 if dont want to use header
- in each barcode
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_cut_title = 50; // maximum characters in title to appear in each
- barcode.
- change to 0 if you dont want the title cutted
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$barcode_header_text = ''; // keep empty if you want to use Library Name
- as a header text
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-// member card print settings
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-/* measurement in cm */
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_page_width = 50;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_page_height = 50;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_page_margin = 0.2;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_items_per_row = 2;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_items_margin = 0.1;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_box_width = 11;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_box_height = 6;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_header_text = $sysconf['library_name'];
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_photo_width = 3;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-$card_photo_height = 3;
+$sysconf['print']['label']['border_size'] = 1; // in pixels
 \end_layout
 
 \begin_layout Standard
@@ -614,102 +572,35 @@ $card_photo_height = 3;
 
 \family typewriter
 \lang bahasa
-$barcodegen_page_width = 29.7;
+$sysconf['print']['barcodegen']['box_width'] = 6;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$barcodegen_page_height = 21;
+$sysconf['print']['barcodegen']['page_margin'] = 0.2;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$barcodegen_page_margin = 0.2;
+$sysconf['print']['barcodegen']['items_margin'] = 0.05;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$barcodegen_items_margin = 0.05;
+$sysconf['print']['barcodegen']['include_border'] = 0;
 \end_layout
 
 \begin_layout Standard
 
 \family typewriter
 \lang bahasa
-$barcodegen_include_border = 0;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-/* Receipt Printing */ 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_width = '15cm'; 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_font = 'serif'; 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_color = '#000'; 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_margin = '5px'; 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_padding = '5px'; 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_border = '1px dashed #000'; 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_fontSize = '7pt'; 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_header_fontSize = '8pt'; 
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-$receipt_titleLength = 100;
-\end_layout
-
-\begin_layout Standard
-
-\family typewriter
-\lang bahasa
-?>
+$sysconf['print']['barcodegen']['items_per_row'] = 3;
 \end_layout
 
 \begin_layout Standard
@@ -718,7 +609,7 @@ $receipt_titleLength = 100;
 Jika anda menginginkan setingan untuk barcode, label dan kartu anggota 
  berbeda pada tiap template, maka anda dapat mengcopi file 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
@@ -1405,7 +1296,8 @@ status collapsed
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename image/upg-tampil.png
+	filename image/instalasi-20.png
+	scale 50
 
 \end_inset
 
@@ -1436,30 +1328,6 @@ Tampilan Senayan Versi terbaru
 
 \begin_layout LyX-Code
 
-\end_layout
-
-\begin_layout Section
-
-\lang bahasa
-Mengubah dan menambahkan informasi pada Library Information di OPAC 
-\end_layout
-
-\begin_layout Standard
-
-\lang bahasa
-Tips ini, mulai Senayan3-stable9 dipindah pada menu System --> Content 
-\end_layout
-
-\begin_layout Section
-
-\lang bahasa
-Mengubah dan menambahkan informasi pada Help on Search
-\end_layout
-
-\begin_layout Standard
-
-\lang bahasa
-Tips ini, mulai Senayan3-stable9 dipindah pada menu System --> Content 
 \end_layout
 
 \begin_layout Section
@@ -1960,7 +1828,7 @@ Ini hanyalah sebuah daftar kecil dengan kata-kata / frase terjemahan yang
 \lang bahasa
 \begin_inset Tabular
 <lyxtabular version="3" rows="43" columns="2">
-<features islongtable="true">
+<features islongtable="true" longtabularalignment="center">
 <column alignment="left" valignment="top" width="0">
 <column alignment="left" valignment="top" width="0">
 <row>
@@ -3696,7 +3564,7 @@ You are going to edit xxx =>
 \begin_layout Section
 
 \lang bahasa
-Setting Barcode
+Ukuran Barcode
 \end_layout
 
 \begin_layout Standard
@@ -3891,7 +3759,7 @@ status open
 \align center
 \begin_inset Graphics
 	filename image/template_default.png
-	scale 45
+	scale 35
 
 \end_inset
 
@@ -4432,35 +4300,14 @@ Buka file sysconfig.inc.php
 \end_layout
 
 \begin_layout Itemize
-Cari baris ke (sekitar) 251, maka anda akan mendapatkan kelompok isian sebagai
+Cari baris ke (sekitar) 257, maka anda akan mendapatkan kelompok isian sebagai
  berikut:
 \end_layout
 
 \begin_layout Standard
-\begin_inset Box Boxed
-position "t"
-hor_pos "c"
-has_inner_box 1
-inner_pos "t"
-use_parbox 0
-width "0pt"
-special "0"
-height "0pt"
-height_special "100col%"
-status collapsed
-
-\begin_layout Plain Layout
-$sysconf['max_image_upload'] = 500; // allowed image file to upload $sysconf['al
-lowed_images'] = array('.jpeg', '.jpg', '.gif', '.png', '.JPEG', '.JPG', '.GIF',
- '.PNG'); // allowed file attachment to upload $sysconf['allowed_file_att']
- = array('.pdf', '.rtf', '.txt', '.odt', '.odp', '.ods', '.doc', '.xls', '.ppt',
- '.avi', '.mpeg', '.mp4', '.flv', '.mvk', '.jpg', '.jpeg', '.png', '.gif', '.ogg',
- '.mp3');
-\end_layout
-
-\end_inset
-
-
+$sysconf['allowed_file_att'] = array('.pdf', '.rtf', '.txt', '.odt', '.odp',
+ '.ods', '.doc', '.xls', '.ppt', '.avi', '.mpeg', '.mp4', '.flv', '.mvk', '.jpg',
+ '.jpeg', '.png', '.gif', '.docx', '.pptx', '.xlsx', '.ogg', '.mp3', '.xml', '.mrc');
 \end_layout
 
 \begin_layout Standard

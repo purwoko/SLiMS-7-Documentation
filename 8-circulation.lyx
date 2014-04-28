@@ -194,7 +194,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/sirk-nota.png
-	scale 80
+	scale 60
 
 \end_inset
 
@@ -240,7 +240,7 @@ Mulai Senayan3-stable11, dimungkinkan untuk menentukan tanggalpinjam dan
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -347,7 +347,7 @@ QuickReturn
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
@@ -415,7 +415,7 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/sirk-loanrules.png
-	scale 35
+	scale 50
 
 \end_inset
 
@@ -607,7 +607,7 @@ status open
 \lang bahasa
 \begin_inset Graphics
 	filename image/sirk-loanover.png
-	scale 35
+	scale 40
 
 \end_inset
 
@@ -660,7 +660,7 @@ Menu ini digunakan untuk melakukan pemesanan koleksi/item.
 \begin_inset Float figure
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \noindent
@@ -669,7 +669,7 @@ status collapsed
 \lang bahasa
 \begin_inset Graphics
 	filename image/sirk-reserv.png
-	scale 90
+	scale 75
 
 \end_inset
 
